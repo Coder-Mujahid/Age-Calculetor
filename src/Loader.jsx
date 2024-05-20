@@ -3,12 +3,19 @@ import './App.css'
 
 
 const Loader = () => {
-  const word = 'Age Calculetor';
+  const word = 'Age Calculator';
+
   return (
     <div className="loader-container">
       <div className="loader">
         {word.split('').map((char, index) => (
-          <span key={index}>{char}</span>
+          <span
+            key={index}
+            className='text-2xl uppercase font-semibold'
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            {char}
+          </span>
         ))}
       </div>
     </div>
@@ -16,3 +23,4 @@ const Loader = () => {
 };
 
 export default Loader;
+
