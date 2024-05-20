@@ -1,10 +1,16 @@
 import React from 'react';
-import '../src/App.css'
+import './App.css'
+
 
 const Loader = () => {
+  const word = 'Age Calculetor';
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="loader"></div>
+    <div className="loader-container">
+      <div className="loader">
+        {word.split('').map((char, index) => (
+          <span key={index}>{char}</span>
+        ))}
+      </div>
     </div>
   );
 };
