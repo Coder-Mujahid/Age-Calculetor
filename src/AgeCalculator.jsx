@@ -1,5 +1,6 @@
 // src/AgeCalculator.jsx
 import { useState } from 'react';
+import ageicon from '../public/img/icons8-age-48.png'
 
 const AgeCalculator = () => {
   const [birthDate, setBirthDate] = useState('');
@@ -46,9 +47,9 @@ const AgeCalculator = () => {
   const age = calculateAge();
 
   return (
-    <div className="flex items-center justify-center h-screen">
-    <div className="bg-white shadow-lg border-[1px] border-slate-200 shadow-emerald-200 rounded-lg max-w-md p-8">
-    <h2 className=' text-center mb-5 text-2xl font-semibold capitalize'> calculate your age 👶 to 👴</h2>
+    <div className="flex items-center justify-center h-screen p-2">
+    <div className="bg-white shadow-lg border-[1px] border-slate-200 shadow-emerald-200 rounded-lg max-w-md p-6">
+    <h2 className=' text-center mb-5 gap-1 md:text-[22px] text-base font-semibold capitalize flex items-center justify-center'> <img src={ageicon} className='md:w-10 w-6 ' alt="img" /> calculate your age <span className='hidden md:block' >👶 to 👴</span></h2>
       <input
         type="date"
         className="w-full mb-4 p-2 border rounded focus:outline-none focus:border-blue-500"
