@@ -1,12 +1,12 @@
 # Age Calculator
 
-An intuitive web application that calculates your age based on your date of birth.
+An intuitive web application calculates your age based on your date of birth.
 
 ## Live Demo
 Check out the live demo [here](https://age-calculetor.vercel.app/).
 
 ## How to Use
-1. Enter your date of birth.
+1. Enter your Date of Birth.
 2. Click on "Calculate Age."
 3. Your age will be displayed in years, months, and days.
 
