@@ -47,8 +47,8 @@ const AgeCalculator = () => {
   const age = calculateAge();
 
   return (
-    <div className="flex items-center justify-center h-screen p-2">
-    <div className="bg-white shadow-lg border-[1px] border-slate-200 shadow-emerald-200 rounded-lg max-w-md p-6">
+    <div className="flex p-3 md:p-0 items-center justify-center h-screen p-2">
+    <div className="bg-white shadow-lg border-[1px] border-slate-200 shadow-emerald-200 rounded-lg w-full  md:max-w-md p-6">
     <h2 className=' text-center mb-5 gap-1 md:text-[22px] text-base font-semibold capitalize flex items-center justify-center'> <img src={ageicon} className='md:w-10 w-6 ' alt="img" /> calculate your age <span className='hidden md:block' >👶 to 👴</span></h2>
       <input
         type="date"
