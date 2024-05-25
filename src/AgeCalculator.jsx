@@ -57,7 +57,7 @@ const AgeCalculator = () => {
         onChange={(e) => setBirthDate(e.target.value)}
       />
       <button
-        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+        className="bg-blue-500 w-full text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
         onClick={calculateAge}
       >
         Calculate Age
